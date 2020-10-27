@@ -24,9 +24,9 @@
 
 <div  style="color:#00AA00;">
 	<div><img src="BZ1912061340483784.jpg" width="149" height="210" alt=""/></div>
-    <span >彭鹭晗，</span><span>男</span>，<span>20</span>岁
+    <span >梁裕，</span><span>男</span>，<span>20</span>岁
     <br/>
-    部门：<span>文学院</span>
+    部门：<span>工学院</span>
 
     <br/> <span >您可以进校</span>
     <br/>
@@ -41,7 +41,9 @@
     var day=t.getDate();
     var hour=t.getHours();
     var minute=t.getMinutes();
-    var showtime=month + "月" + day+"日 "+hour+":"+minute;
+    if(minute<10){
+    var showtime=month + "月" + day+"日 "+hour+":0"+minute;}
+    else{var showtime=month + "月" + day+"日 "+hour+":"+minute;}
     document.write(showtime);
     </script>
 </span></div>
